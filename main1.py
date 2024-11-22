@@ -32,10 +32,11 @@ def upsert(dictionary, key, value):
         Key: The key to the dictionary for the upsert
         value: The value being upsert
     """
-   if key in dictionary.keys():
+   
+  if key in dictionary.keys():
       #dictionary contains key, update
       dictionary[key] = dictionary[key] + value
-   else:
+  else:
       #dictionary does not contain key, set
       dictionary[key] = value
 
