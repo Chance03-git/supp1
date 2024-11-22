@@ -23,6 +23,15 @@ def count(string):
    return len(string)
 
 def upsert(dictionary, key, value):
+  """upserts a value into the dictionary
+
+   The value must implement addition with itself 
+
+    Args:
+        dictionary: the dictionary to upsert to
+        Key: The key to the dictionary for the upsert
+        value: The value being upsert
+    """
    if key in dictionary.keys():
       #dictionary contains key, update
       dictionary[key] = dictionary[key] + value
