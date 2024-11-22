@@ -28,3 +28,9 @@ def test_should_return_four_for_two_and_two():
 
 def test_return_the_length_of_string_and_return():
    assert count("Hello") == 5 
+
+def test_should_insert_new_key():
+   dictionary = {}
+   key = "test"
+   upsert(dictionary, key, 5)
+   assert dictionary[key] == 5 
